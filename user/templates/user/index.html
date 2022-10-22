@@ -1,0 +1,11 @@
+{% extends 'user/static.html' %}
+
+{% block content %}
+    <h1> Chao mung den voi cua hang <b> {{name}} </b> </h1>
+<ul>
+  {% for item in sanpham %}
+      <li>{{item}}</li>
+  {% endfor %}`
+</ul>
+
+{% endblock %}
