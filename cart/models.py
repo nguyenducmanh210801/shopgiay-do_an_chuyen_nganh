@@ -2,7 +2,6 @@ from django.db import models
 from shop.product.models import Variation
 from shop.user.models import CustomerUser
 
-
 class Cart(models.Model):
     user = models.ForeignKey(CustomerUser, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
